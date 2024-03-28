@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
+        <link rel="stylesheet" href="css/leaflet-measure.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<style>
+		.header {
+			padding: 10px 16px;
+			background: #92C7CF;
+			color: #f1f1f1;
+		}
+		
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+		
+		html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+		
+        </style>
+        <title>PrevelensiStunting DIY</title>
+    </head>
+    <body>
+		<center><div class="header" id="myHeader" style="max-width:1500px">
+			<h2>Prevelensi Stunting di DIY</h2>
+		</div>
+		
+		<iframe width="1200" height="700" src="https://www.youtube.com/embed/bke5H5mJpvE?si=VCOLIwWjNJvHngbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+		
+		<div class="w3-row">
+			<div class="w3-col l8 s12">
+			<div class="w3-card-4 w3-margin w3-white">
+				<img src="stunting.png" alt="Nature" style="width:100%">
+			<div class="w3-container">
+				<center><h3><b>Apa itu STUNTING?</b></h3></center>
+			</div>
+			<div class="w3-container">
+				<p>Masalah gizi pada balita merupakan masalah Kesehatan Masyarakat yang masih tergolong tinggi di Indonesia, baik yang bersifat akut maupun kronis. Stunting atau anak pendek berdasarkan umur merupakan salah satu indikator kondisi gagal tumbuh pada anak berusia dibawah lima tahun (balita) akibat kekurangan asupan gizi kronis dan infeksi berulang terutama pada periode 1.000 Hari Pertama Kehidupan (HPK), yaitu dari janin hingga anak berusia 23 bulan (Gambar 1). Karenanya periode 1.000 HPK ini disebut pula sebagai periode Emas untuk melakukan pencegahan atau koreksi masalah stunting dengan berbagai intervensi gizi spesifik dan sensitif. Intervensi gizi spesifik terdiri dari berbagai program yang bertujuan untuk menanggulangi penyebab langsung masalah stunting, sementara intervensi gizi sensitif merupakan kelompok program yang bertujuan untuk menanggulangi berbagai penyebab tak langsung dari stunting. Dengan kata lain, masalah stunting bersifat multifaktor yang dalam pemantauannya membutuhkan sistem pemantauan dan evaluasi (monev) terpadu.</p>
+			</div>
+			</div>
+			<hr>
+			<div class="w3-card-4 w3-margin w3-white">
+				<center><h3><b>Konsep Stunting</b></h3></center>
+				<hr>
+				<img src="konsep_stunting.png" alt="Norway" style="width:100%">
+			</div>
+			</div>
+
+		<div class="w3-col l4">
+		<img src="gy.gif" style="width:90%">
+			<div class="w3-card w3-margin w3-margin-top">
+				<img src="ber2.jpg" style="width:100%">
+			<div class="w3-container w3-white">
+				<h4><b>Prevalensi Stunting DIY Sumbang Penurunan Angka Nasional</b></h4>
+				<p>Pada periode 2018-2022, prevalensi stunting di DIY terus menurun dari 21,46% menjadi 16,4%. Melihat prevalensi tersebut, DIY optimis, akan segera mencapai angka 14% seperti target RPJMN 2020-2024.</p>
+				<a href="https://jogjaprov.go.id/berita/prevalensi-stunting-diy-sumbang-penurunan-angka-nasional">Read More</a>
+			</div>
+			</div>
+			<div class="w3-card w3-margin w3-margin-top">
+				<img src="ber1.jpg" style="width:100%">
+			<div class="w3-container w3-white">
+				<h4><b>Angka Stunting DIY Terendah Ke-5 di Indonesia, Kepala BKKBN: Ke Depan Perhatikan Kesehatan Jiwa Masyarakat</b></h4>
+				<p>Kepala Badan Kependudukan dan Keluarga Berencana Nasional (BKKBN) dr Hasto Wardoyo menyampaikan bahwa prevalensi stunting di Provinsi Daerah Istimewa Yogyakarta (DIY) sudah berada di bawah standar yang ditetapkan oleh Organisasi Kesehatan Dunia (WHO) sebesar 20 persen. “Angka stunting di DIY pada 2022 sebesar 16,4 persen, (menempatkan pada) urutan terendah kelima di Indonesia. (Standar) WHO mewajibkan angka 20 persen".</p>
+				<a href="https://regional.kompas.com/read/2024/02/02/172051978/angka-stunting-diy-terendah-ke-5-di-indonesia-kepala-bkkbn-ke-depan?page=all">Read More</a>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+		<div class="w3-container" style="padding:10px 16px" style="margin-top:5px">
+		<h3 class="w3-center">Peta Prevelensi Stunting</h3>
+		<div class="w3-row-padding w3-center" style="margin-top:7px">
+		<div class="w3-col l3 m6 w3-margin-bottom">
+		</div></div></div>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
+        <script src="js/leaflet-measure.js"></script>
+        <script src="data/PENGGUNAANLAHAN_1.js"></script>
+        <script src="data/SUNGAI_2.js"></script>
+        <script src="data/STUNTING_3.js"></script>
+        <script src="data/BATASADMINISTRASI_4.js"></script>
+        <script src="data/JALAN_5.js"></script>
+        <script src="data/PEMERINTAHAN_6.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[-8.204863494996522,109.95046984009522],[-7.512289615954165,110.99844347285668]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        function removeEmptyRowsFromPopupContent(content, feature) {
+         var tempDiv = document.createElement('div');
+         tempDiv.innerHTML = content;
+         var rows = tempDiv.querySelectorAll('tr');
+         for (var i = 0; i < rows.length; i++) {
+             var td = rows[i].querySelector('td.visible-with-data');
+             var key = td ? td.id : '';
+             if (td && td.classList.contains('visible-with-data') && feature.properties[key] == null) {
+                 rows[i].parentNode.removeChild(rows[i]);
+             }
+         }
+         return tempDiv.innerHTML;
+        }
+        document.querySelector(".leaflet-popup-pane").addEventListener("load", function(event) {
+          var tagName = event.target.tagName,
+            popup = map._popup;
+          // Also check if flag is already set.
+          if (tagName === "IMG" && popup && !popup._updated) {
+            popup._updated = true; // Set flag to prevent looping.
+            popup.update();
+          }
+        }, true);
+        var measureControl = new L.Control.Measure({
+            position: 'topleft',
+            primaryLengthUnit: 'meters',
+            secondaryLengthUnit: 'kilometers',
+            primaryAreaUnit: 'sqmeters',
+            secondaryAreaUnit: 'hectares'
+        });
+        measureControl.addTo(map);
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .innerHTML = '';
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .className += ' fas fa-ruler';
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        map.createPane('pane_OSMStandard_0');
+        map.getPane('pane_OSMStandard_0').style.zIndex = 400;
+        var layer_OSMStandard_0 = L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            pane: 'pane_OSMStandard_0',
+            opacity: 1.0,
+            attribution: '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_OSMStandard_0;
+        map.addLayer(layer_OSMStandard_0);
+        function pop_PENGGUNAANLAHAN_1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">REMARK</th>\
+                        <td>' + (feature.properties['REMARK'] !== null ? autolinker.link(feature.properties['REMARK'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+            var popup = layer.getPopup();
+            var content = popup.getContent();
+            var updatedContent = removeEmptyRowsFromPopupContent(content, feature);
+            popup.setContent(updatedContent);
+        }
+
+        function style_PENGGUNAANLAHAN_1_0(feature) {
+            switch(String(feature.properties['REMARK'])) {
+                case 'Hutan Rawa/Gambut':
+                    return {
+                pane: 'pane_PENGGUNAANLAHAN_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(166,208,61,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Hutan Rimba':
+                    return {
+                pane: 'pane_PENGGUNAANLAHAN_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(71,233,26,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Padang Rumput':
+                    return {
+                pane: 'pane_PENGGUNAANLAHAN_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(88,240,179,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Pasir/Bukit Pasir Darat':
+                    return {
+                pane: 'pane_PENGGUNAANLAHAN_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(177,177,177,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Perkebunan/Kebun':
+                    return {
+                pane: 'pane_PENGGUNAANLAHAN_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(210,154,57,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Permukiman dan Tempat Kegiatan':
+                    return {
+                pane: 'pane_PENGGUNAANLAHAN_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,113,236,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Sawah':
+                    return {
+                pane: 'pane_PENGGUNAANLAHAN_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(233,243,45,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Sawah Tadah Hujan':
+                    return {
+                pane: 'pane_PENGGUNAANLAHAN_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(206,193,47,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Semak Belukar':
+                    return {
+                pane: 'pane_PENGGUNAANLAHAN_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(137,118,200,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Tegalan/Ladang':
+                    return {
+                pane: 'pane_PENGGUNAANLAHAN_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(174,56,207,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Vegetasi Non Budidaya Lainnya':
+                    return {
+                pane: 'pane_PENGGUNAANLAHAN_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(65,13,255,1.0)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_PENGGUNAANLAHAN_1');
+        map.getPane('pane_PENGGUNAANLAHAN_1').style.zIndex = 401;
+        map.getPane('pane_PENGGUNAANLAHAN_1').style['mix-blend-mode'] = 'normal';
+        var layer_PENGGUNAANLAHAN_1 = new L.geoJson(json_PENGGUNAANLAHAN_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_PENGGUNAANLAHAN_1',
+            layerName: 'layer_PENGGUNAANLAHAN_1',
+            pane: 'pane_PENGGUNAANLAHAN_1',
+            onEachFeature: pop_PENGGUNAANLAHAN_1,
+            style: style_PENGGUNAANLAHAN_1_0,
+        });
+        bounds_group.addLayer(layer_PENGGUNAANLAHAN_1);
+        map.addLayer(layer_PENGGUNAANLAHAN_1);
+        function pop_SUNGAI_2(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">NAMOBJ</th>\
+                        <td>' + (feature.properties['NAMOBJ'] !== null ? autolinker.link(feature.properties['NAMOBJ'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+            var popup = layer.getPopup();
+            var content = popup.getContent();
+            var updatedContent = removeEmptyRowsFromPopupContent(content, feature);
+            popup.setContent(updatedContent);
+        }
+
+        function style_SUNGAI_2_0() {
+            return {
+                pane: 'pane_SUNGAI_2',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(133,208,255,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_SUNGAI_2');
+        map.getPane('pane_SUNGAI_2').style.zIndex = 402;
+        map.getPane('pane_SUNGAI_2').style['mix-blend-mode'] = 'normal';
+        var layer_SUNGAI_2 = new L.geoJson(json_SUNGAI_2, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_SUNGAI_2',
+            layerName: 'layer_SUNGAI_2',
+            pane: 'pane_SUNGAI_2',
+            onEachFeature: pop_SUNGAI_2,
+            style: style_SUNGAI_2_0,
+        });
+        bounds_group.addLayer(layer_SUNGAI_2);
+        map.addLayer(layer_SUNGAI_2);
+        function pop_STUNTING_3(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">NAMOBJ</th>\
+                        <td>' + (feature.properties['NAMOBJ'] !== null ? autolinker.link(feature.properties['NAMOBJ'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Prevalensi</th>\
+                        <td>' + (feature.properties['Prevalensi'] !== null ? autolinker.link(feature.properties['Prevalensi'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Stunting</th>\
+                        <td>' + (feature.properties['Stunting'] !== null ? autolinker.link(feature.properties['Stunting'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+            var popup = layer.getPopup();
+            var content = popup.getContent();
+            var updatedContent = removeEmptyRowsFromPopupContent(content, feature);
+            popup.setContent(updatedContent);
+        }
+
+        function style_STUNTING_3_0(feature) {
+            if (feature.properties['Prevalensi'] >= 0.000000 && feature.properties['Prevalensi'] <= 5.000000 ) {
+                return {
+                pane: 'pane_STUNTING_3',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(252,190,165,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['Prevalensi'] >= 5.000000 && feature.properties['Prevalensi'] <= 10.000000 ) {
+                return {
+                pane: 'pane_STUNTING_3',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(251,112,80,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['Prevalensi'] >= 10.000000 && feature.properties['Prevalensi'] <= 15.000000 ) {
+                return {
+                pane: 'pane_STUNTING_3',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(211,32,32,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['Prevalensi'] >= 15.000000 && feature.properties['Prevalensi'] <= 25.000000 ) {
+                return {
+                pane: 'pane_STUNTING_3',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(136,0,18,1.0)',
+                interactive: true,
+            }
+            }
+        }
+        map.createPane('pane_STUNTING_3');
+        map.getPane('pane_STUNTING_3').style.zIndex = 403;
+        map.getPane('pane_STUNTING_3').style['mix-blend-mode'] = 'normal';
+        var layer_STUNTING_3 = new L.geoJson(json_STUNTING_3, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_STUNTING_3',
+            layerName: 'layer_STUNTING_3',
+            pane: 'pane_STUNTING_3',
+            onEachFeature: pop_STUNTING_3,
+            style: style_STUNTING_3_0,
+        });
+        bounds_group.addLayer(layer_STUNTING_3);
+        map.addLayer(layer_STUNTING_3);
+        function pop_BATASADMINISTRASI_4(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">REMARK</th>\
+                        <td>' + (feature.properties['REMARK'] !== null ? autolinker.link(feature.properties['REMARK'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+            var popup = layer.getPopup();
+            var content = popup.getContent();
+            var updatedContent = removeEmptyRowsFromPopupContent(content, feature);
+            popup.setContent(updatedContent);
+        }
+
+        function style_BATASADMINISTRASI_4_0() {
+            return {
+                pane: 'pane_BATASADMINISTRASI_4',
+                opacity: 1,
+                color: 'rgba(255,255,255,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+        }
+        map.createPane('pane_BATASADMINISTRASI_4');
+        map.getPane('pane_BATASADMINISTRASI_4').style.zIndex = 404;
+        map.getPane('pane_BATASADMINISTRASI_4').style['mix-blend-mode'] = 'normal';
+        var layer_BATASADMINISTRASI_4 = new L.geoJson(json_BATASADMINISTRASI_4, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_BATASADMINISTRASI_4',
+            layerName: 'layer_BATASADMINISTRASI_4',
+            pane: 'pane_BATASADMINISTRASI_4',
+            onEachFeature: pop_BATASADMINISTRASI_4,
+            style: style_BATASADMINISTRASI_4_0,
+        });
+        bounds_group.addLayer(layer_BATASADMINISTRASI_4);
+        map.addLayer(layer_BATASADMINISTRASI_4);
+        function pop_JALAN_5(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">REMARK</th>\
+                        <td>' + (feature.properties['REMARK'] !== null ? autolinker.link(feature.properties['REMARK'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+            var popup = layer.getPopup();
+            var content = popup.getContent();
+            var updatedContent = removeEmptyRowsFromPopupContent(content, feature);
+            popup.setContent(updatedContent);
+        }
+
+        function style_JALAN_5_0(feature) {
+            switch(String(feature.properties['REMARK'])) {
+                case 'Jalan Arteri':
+                    return {
+                pane: 'pane_JALAN_5',
+                opacity: 1,
+                color: 'rgba(227,26,28,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Jalan Kolektor':
+                    return {
+                pane: 'pane_JALAN_5',
+                opacity: 1,
+                color: 'rgba(227,26,28,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Jalan Lokal':
+                    return {
+                pane: 'pane_JALAN_5',
+                opacity: 1,
+                color: 'rgba(210,26,41,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_JALAN_5');
+        map.getPane('pane_JALAN_5').style.zIndex = 405;
+        map.getPane('pane_JALAN_5').style['mix-blend-mode'] = 'normal';
+        var layer_JALAN_5 = new L.geoJson(json_JALAN_5, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_JALAN_5',
+            layerName: 'layer_JALAN_5',
+            pane: 'pane_JALAN_5',
+            onEachFeature: pop_JALAN_5,
+            style: style_JALAN_5_0,
+        });
+        bounds_group.addLayer(layer_JALAN_5);
+        map.addLayer(layer_JALAN_5);
+        function pop_PEMERINTAHAN_6(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">REMARK</th>\
+                        <td>' + (feature.properties['REMARK'] !== null ? autolinker.link(feature.properties['REMARK'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+            var popup = layer.getPopup();
+            var content = popup.getContent();
+            var updatedContent = removeEmptyRowsFromPopupContent(content, feature);
+            popup.setContent(updatedContent);
+        }
+
+        function style_PEMERINTAHAN_6_0(feature) {
+            switch(String(feature.properties['REMARK'])) {
+                case 'Kantor Bupati':
+                    return {
+                pane: 'pane_PEMERINTAHAN_6',
+                radius: 2.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(230,118,118,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Kantor Camat':
+                    return {
+                pane: 'pane_PEMERINTAHAN_6',
+                radius: 2.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(114,206,206,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Kantor Gubernur':
+                    return {
+                pane: 'pane_PEMERINTAHAN_6',
+                radius: 2.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(106,230,23,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Kantor Kepala Desa':
+                    return {
+                pane: 'pane_PEMERINTAHAN_6',
+                radius: 2.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(139,38,233,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Kantor Lurah':
+                    return {
+                pane: 'pane_PEMERINTAHAN_6',
+                radius: 2.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(232,91,197,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Kantor Polisi':
+                    return {
+                pane: 'pane_PEMERINTAHAN_6',
+                radius: 2.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(70,106,214,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Kantor Wali Kota':
+                    return {
+                pane: 'pane_PEMERINTAHAN_6',
+                radius: 2.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(245,218,13,1.0)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_PEMERINTAHAN_6');
+        map.getPane('pane_PEMERINTAHAN_6').style.zIndex = 406;
+        map.getPane('pane_PEMERINTAHAN_6').style['mix-blend-mode'] = 'normal';
+        var layer_PEMERINTAHAN_6 = new L.geoJson(json_PEMERINTAHAN_6, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_PEMERINTAHAN_6',
+            layerName: 'layer_PEMERINTAHAN_6',
+            pane: 'pane_PEMERINTAHAN_6',
+            onEachFeature: pop_PEMERINTAHAN_6,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_PEMERINTAHAN_6_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_PEMERINTAHAN_6);
+        map.addLayer(layer_PEMERINTAHAN_6);
+        var osmGeocoder = new L.Control.Geocoder({
+            collapsed: true,
+            position: 'topleft',
+            text: 'Search',
+            title: 'Testing'
+        }).addTo(map);
+        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
+        .className += ' fa fa-search';
+        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
+        .title += 'Search for a place';
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'PEMERINTAHAN<br /><table><tr><td style="text-align: center;"><img src="legend/PEMERINTAHAN_6_KantorBupati0.png" /></td><td>Kantor Bupati</td></tr><tr><td style="text-align: center;"><img src="legend/PEMERINTAHAN_6_KantorCamat1.png" /></td><td>Kantor Camat</td></tr><tr><td style="text-align: center;"><img src="legend/PEMERINTAHAN_6_KantorGubernur2.png" /></td><td>Kantor Gubernur</td></tr><tr><td style="text-align: center;"><img src="legend/PEMERINTAHAN_6_KantorKepalaDesa3.png" /></td><td>Kantor Kepala Desa</td></tr><tr><td style="text-align: center;"><img src="legend/PEMERINTAHAN_6_KantorLurah4.png" /></td><td>Kantor Lurah</td></tr><tr><td style="text-align: center;"><img src="legend/PEMERINTAHAN_6_KantorPolisi5.png" /></td><td>Kantor Polisi</td></tr><tr><td style="text-align: center;"><img src="legend/PEMERINTAHAN_6_KantorWaliKota6.png" /></td><td>Kantor Wali Kota</td></tr></table>': layer_PEMERINTAHAN_6,'JALAN<br /><table><tr><td style="text-align: center;"><img src="legend/JALAN_5_JalanArteri0.png" /></td><td>Jalan Arteri</td></tr><tr><td style="text-align: center;"><img src="legend/JALAN_5_JalanKolektor1.png" /></td><td>Jalan Kolektor</td></tr><tr><td style="text-align: center;"><img src="legend/JALAN_5_JalanLokal2.png" /></td><td>Jalan Lokal</td></tr></table>': layer_JALAN_5,'<img src="legend/BATASADMINISTRASI_4.png" /> BATAS ADMINISTRASI': layer_BATASADMINISTRASI_4,'STUNTING<br /><table><tr><td style="text-align: center;"><img src="legend/STUNTING_3_050.png" /></td><td>0 - 5</td></tr><tr><td style="text-align: center;"><img src="legend/STUNTING_3_5101.png" /></td><td>5 - 10</td></tr><tr><td style="text-align: center;"><img src="legend/STUNTING_3_10152.png" /></td><td>10 - 15</td></tr><tr><td style="text-align: center;"><img src="legend/STUNTING_3_15253.png" /></td><td>15 - 25</td></tr></table>': layer_STUNTING_3,'<img src="legend/SUNGAI_2.png" /> SUNGAI': layer_SUNGAI_2,'PENGGUNAAN LAHAN<br /><table><tr><td style="text-align: center;"><img src="legend/PENGGUNAANLAHAN_1_HutanRawaGambut0.png" /></td><td>Hutan Rawa/Gambut</td></tr><tr><td style="text-align: center;"><img src="legend/PENGGUNAANLAHAN_1_HutanRimba1.png" /></td><td>Hutan Rimba</td></tr><tr><td style="text-align: center;"><img src="legend/PENGGUNAANLAHAN_1_PadangRumput2.png" /></td><td>Padang Rumput</td></tr><tr><td style="text-align: center;"><img src="legend/PENGGUNAANLAHAN_1_PasirBukitPasirDarat3.png" /></td><td>Pasir/Bukit Pasir Darat</td></tr><tr><td style="text-align: center;"><img src="legend/PENGGUNAANLAHAN_1_PerkebunanKebun4.png" /></td><td>Perkebunan/Kebun</td></tr><tr><td style="text-align: center;"><img src="legend/PENGGUNAANLAHAN_1_PermukimandanTempatKegiatan5.png" /></td><td>Permukiman dan Tempat Kegiatan</td></tr><tr><td style="text-align: center;"><img src="legend/PENGGUNAANLAHAN_1_Sawah6.png" /></td><td>Sawah</td></tr><tr><td style="text-align: center;"><img src="legend/PENGGUNAANLAHAN_1_SawahTadahHujan7.png" /></td><td>Sawah Tadah Hujan</td></tr><tr><td style="text-align: center;"><img src="legend/PENGGUNAANLAHAN_1_SemakBelukar8.png" /></td><td>Semak Belukar</td></tr><tr><td style="text-align: center;"><img src="legend/PENGGUNAANLAHAN_1_TegalanLadang9.png" /></td><td>Tegalan/Ladang</td></tr><tr><td style="text-align: center;"><img src="legend/PENGGUNAANLAHAN_1_VegetasiNonBudidayaLainnya10.png" /></td><td>Vegetasi Non Budidaya Lainnya</td></tr></table>': layer_PENGGUNAANLAHAN_1,"OSM Standard": layer_OSMStandard_0,},{collapsed:false}).addTo(map);
+        setBounds();
+		
+		
+		window.onscroll = function() {myFunction()};
+
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
+			}
+			}
+        </script>
+		<center><h3>Data Prevalensi Stunting DIY</h3>
+		<table style="width:70%">
+		<tr>
+			<th>Kabupaten/ Kota</th>
+			<th>Jumlah Balita (anak)</th>
+			<th>Pendek (anak)</th>
+			<th>Sangat Pendek (anak)</th>
+			<th>Prevalensi (%)</th>
+		</tr>
+		<tr>
+			<td>Sleman</td>
+			<td>48.958</td>
+			<td>1.508</td>
+			<td>700</td>
+			<td>4,5</td>
+		</tr>
+		<tr>
+			<td>KulonProgo</td>
+			<td>22.708</td>
+			<td>1.545</td>
+			<td>351</td>
+			<td>8,3</td>
+		</tr>
+		<tr>
+			<td>GunungKidul</td>
+			<td>28.260</td>
+			<td>3.380</td>
+			<td>930</td>
+			<td>15,3</td>
+		</tr>
+		<tr>
+			<td>Kota Yogyakarta</td>
+			<td>10.662</td>
+			<td>1.065</td>
+			<td>189</td>
+			<td>11,8</td>
+		</tr>
+		<tr>
+			<td>Bantul</td>
+			<td>44.620</td>
+			<td>2.842</td>
+			<td>930</td>
+			<td>6,4</td>
+		</tr>
+		</table></center>
+    </body>
+	
+	<center><img src="kids.gif" style="width:20%">
+	<b><h3 style='color:red'>"Mari bersama cegah Stunting, Wujudkan Anak Indonesia Sehat!"</h3></b>
+	
+	<a href="https://dinasalmanuri.github.io/SIGWEB_M6/">Download</a></center>
+	
+	<div class="w3-container w3-light-grey" style="padding:50px 16px" id="contact">
+		<h3 class="w3-center">CONTACT</h3>
+		<div style="margin-top:10px">
+			<p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Sleman, Yogyakarta</p>
+			<p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 081228298258</p>
+			<p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: dinasalmanuri@mail.com</p>
+			<br>
+			<form action="/action_page.php" target="_blank">
+				<p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+				<p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+				<p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+				<p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+				<p>
+					<button class="w3-button" type="submit" style="background-color:#92C7CF">
+						<i class="fa fa-paper-plane"></i> SEND MESSAGE
+					</button>
+				</p>
+			</form>
+		</div>
+	</div>
+	
+	<footer class="w3-center w3-padding-64" style="background-color:#92C7CF">
+	<div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+		<i class="fa fa-facebook-official w3-hover-opacity"></i>
+		<i class="fa fa-instagram w3-hover-opacity"></i>
+		<i class="fa fa-snapchat w3-hover-opacity"></i>
+		<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+		<i class="fa fa-twitter w3-hover-opacity"></i>
+		<i class="fa fa-linkedin w3-hover-opacity"></i>
+	</div>
+	<p>Copyright @Dina Salmanuri</p>
+	</footer>
+</html>
